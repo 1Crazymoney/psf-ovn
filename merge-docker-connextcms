@@ -1,22 +1,22 @@
 #!/bin/bash
 #This file used to merge project into the ConnextCMS Docker-Compose installation.
 
-echo Preparing to copy RPiOVN files...
+echo Preparing to copy psfovn files...
 
 echo Copying Keystone core files...
 cp keystone-docker.js ../../myCMS/keystone.js
 
 echo Copying Keystone templates...
-cp plugin/rpiovn-plugin/keystone/templates/views/*.hbs ../../myCMS/templates/views/
-cp plugin/rpiovn-plugin/keystone/templates/views/layouts/*.hbs ../../myCMS/templates/views/layouts/
+cp plugin/psfovn-plugin/keystone/templates/views/*.hbs ../../myCMS/templates/views/
+cp plugin/psfovn-plugin/keystone/templates/views/layouts/*.hbs ../../myCMS/templates/views/layouts/
 
 echo Copying Keystone models...
-cp plugin/rpiovn-plugin/keystone/models/*.js ../../myCMS/models/
+cp plugin/psfovn-plugin/keystone/models/*.js ../../myCMS/models/
 
 echo Copying Keystone routes...
-cp plugin/rpiovn-plugin/keystone/routes/*.js ../../myCMS/routes/
-cp plugin/rpiovn-plugin/keystone/routes/api/*.js ../../myCMS/routes/api/
-cp plugin/rpiovn-plugin/keystone/routes/views/*.js ../../myCMS/routes/views/
+cp plugin/psfovn-plugin/keystone/routes/*.js ../../myCMS/routes/
+cp plugin/psfovn-plugin/keystone/routes/api/*.js ../../myCMS/routes/api/
+cp plugin/psfovn-plugin/keystone/routes/views/*.js ../../myCMS/routes/views/
 
 echo Copying public files...
 cp public/favicon.ico ../../myCMS/public

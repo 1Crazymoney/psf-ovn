@@ -13,8 +13,8 @@ var fs = require('fs');
 
 keystone.init({
 
-  'name': 'rpiovn',
-  'brand': 'RPi OVN',
+  'name': 'psfovn',
+  'brand': 'PSF OVN',
 
   'less': 'public',
   'static': 'public',
@@ -34,11 +34,11 @@ keystone.init({
   'session': true,
   'auth': true,
   'user model': 'User',
-  'port': 3000,
+  'port': 3003,
   'signin redirect': '/logwork',
   'signout redirect': '/',
   'file limit': '50MB',
-  'mongo': 'mongodb://172.17.0.1:3503/rpiovn'
+  'mongo': 'mongodb://172.17.0.1:3503/psfovn'
 });
 
 // Load your project's Models
